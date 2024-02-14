@@ -7,6 +7,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { TbPlaylist } from "react-icons/tb";
 import MediaItem from "./MediaItem";
 import useOnPlay from "@/hooks/useOnPlay";
+import { Song } from "@/types";
 
 interface LibraryProps {
   songs: Song[]
