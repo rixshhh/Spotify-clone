@@ -9,6 +9,7 @@ import SidebarItem from "./SidebarItem";
 import Library from "./Library";
 import { twMerge } from "tailwind-merge";
 import Player from "./Player";
+import { Song } from "@/types";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -40,6 +41,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children , songs }) => {
     <div className={twMerge(`
     flex h-full
     `,
+    // @ts-ignore
     Player.activeId && 'h-[calc(100%-80px)]')}>
       <div
         className="hidden md:flex flex-col gap-y-2
